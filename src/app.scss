@@ -1,0 +1,215 @@
+$white: #fff;
+$black: #000;
+$yellow: #ffd692;
+$principal: #420000;
+$font-roboto: "Roboto", "Arial", sans-serif;
+
+body {
+    margin: 0;
+    padding: 0;
+    outline: 0 none;
+    font-family: $font-roboto;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto; // hack-css
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 15px; // css-grid gap
+}
+
+.header {
+    background: white;
+    min-height: 50px;
+    padding: 10px 0;
+    color: green;
+    font-family: $font-roboto;
+
+    .container {
+        grid-template-columns: repeat(2, 1fr); // CSS Grid
+        grid-template-rows: 50px;
+    }
+}
+
+.main {
+    min-height: 500px;
+}
+
+.footer {
+    min-height: 40px;
+    background-color: #420000;
+    justify-content: flex-end;
+    color: white;
+    
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    padding: 5px;
+    justify-content: flex-end;
+    position: relative;
+    top: -5px;
+    font-family: $font-roboto;
+
+
+   
+    .nav-item {
+        padding: 0 5px;
+        
+        a {
+            color: $principal;
+            text-decoration: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    }
+}
+
+.main {
+    background-color:white;
+    .hero {
+        background-image: url(https://images5.alphacoders.com/557/thumb-1920-557442.png);
+        background-size: cover;
+        background-position:center;
+        padding: 10px ;
+
+        .hero-title {
+            font-size: 36px;
+            color: black    ;
+            font-weight: bold;
+            margin: 0;
+            margin-bottom: 5px;
+            
+        }
+
+        .hero-subtitle {
+            font-size: 24px;
+            color:black;
+            font-weight: 300;
+            margin: 0;
+            
+        }
+    }
+    .content {
+        padding: 30px 0;
+
+        .container {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+.card {
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    color: black;
+    border: 3px solid darken($principal, 10%);
+    position: relative;
+    .card-content {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 15px;
+        .card-title {
+            font-size: 33px;
+            font-weight: 700;
+            margin: 0;
+        }
+        .card-author {
+            font-size: 23px;
+            font-weight: 400;
+            margin: 0;
+        }
+    }
+}
+
+.btn-showmore {
+    margin-top: 15px;
+    padding: 10px;
+    border: 3px solid darken #000, 10%;
+    width: 130px;
+    color: white;
+    font-weight: 700;
+    border-radius: 4px;
+    background: #420000;
+}
+
+.nav-menu {
+    display: none !important;
+}
+
+.nav-item {
+    display: block;
+}
+
+@media (max-width: 576px) {
+    .nav-menu {
+        display: block !important;
+    }
+
+    .hero {
+        padding: 15px !important;
+    }
+
+    .content {
+        .grid-container {
+            grid-template-columns: 1fr !important;
+        }
+    }
+
+    .nav-item {
+        display: none;
+    }
+}
+
+.MegaNoticia{
+    
+    margin-right: 15px;
+h1{
+    color: blue;
+    
+    
+}    
+}
+
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+}
+  
+@media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+
+    .content {
+        .grid-container {
+            grid-template-columns: repeat(2, 1fr) !important;
+        }
+    }
+}
+  
+@media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+    .content {
+        .grid-container {
+            grid-template-columns: repeat(3, 1fr) !important;
+        }
+    }
+}
+  
+@media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+}
+
+
+
