@@ -21,7 +21,7 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />
             <Route exact path="/contact" component={Contact} />
-            <Route exact path="/mega" component={mega} />
+            <Route exact path="/pages/mega" component={mega} />
             <Route component={NotFound} />
           </Switch>
         </BaseLayout>

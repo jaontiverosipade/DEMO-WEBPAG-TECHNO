@@ -5,7 +5,7 @@ import Card from '../components/Card';
 const cardElements = [
     {
       id: 1,
-      title: <a href='../mega'>Jugamos Megaman X</a>,
+      title: <a href='/pages/mega'>Jugamos Megaman X</a>,
       author: 'Capcom', 
       cover: 'https://i.imgflip.com/2uecxn.gif' 
     },
