@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Contacto = () => (
+const mega = () => (
     <>
         <div className="container">
             <section className="hero">
@@ -85,4 +85,4 @@ const Contacto = () => (
     </>
 );
 
-export default Contacto;
+export default mega;
